@@ -93,10 +93,9 @@ class Planet_w_rings extends Stellar {
     circle(this.posX, this.posY, this.radius);
     text(this.name, this.posX + this.radius, this.posY);
     noFill();
-    stroke(220);
-    circle(this.posX, this.posY, this.radius + 12);
-    circle(this.posX, this.posY, this.radius + 13);
-    circle(this.posX, this.posY, this.radius + 14);
+    stroke(100);
+    for(int i=12; i<=20; i++){
+    circle(this.posX, this.posY, this.radius + i);
   }
   
   void orbit(){
