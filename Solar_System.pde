@@ -63,7 +63,7 @@ class Planet extends Stellar {
   }
   
   void render(){
-    //orbit();
+    orbit();
     noStroke();
     fill(this.albedo);
     circle(this.posX, this.posY, this.radius);
@@ -88,7 +88,7 @@ class Planet_w_rings extends Stellar {
   }
   
   void render(){
-    //orbit();
+    orbit();
     fill(this.albedo);
     circle(this.posX, this.posY, this.radius);
     text(this.name, this.posX + this.radius, this.posY);
